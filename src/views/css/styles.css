@@ -1,0 +1,21 @@
+/* div.maincontainer {
+    width: 100vw;
+    height: 100vh;
+} */
+div.subcontainer {
+    display: inline-block;
+    width: 23%;
+    /* 
+    width: 40%;
+    height: 50%; */
+    border-style: solid;
+    margin: auto;
+    border-radius: 5%;
+}
+div.subcontainer form input,
+div.subcontainer form label {
+    display: block;
+    align-items: center;
+    align-self: center;
+    margin: 10px auto;
+}

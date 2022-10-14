@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CRUD Llame a Dios</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="maincontainer">
+            <div class="subcontainer">
+                <form action="/read" method="post">
+                    <label for="idR">ID a consultar</label>
+                    <input type="text" name="idR" id="" />
+                    <input type="submit" value="Consultar" />
+                </form>
+            </div>
+            <div class="subcontainer">
+                <form action="/create" method="post">
+                    <label for="nameC">Nombre</label>
+                    <input type="text" name="nameC" />
+                    <label for="numLinesC">Numero de lineas</label>
+                    <input type="text" name="numLinesC" />
+                    <label for="lenguajeC">Lenguaje</label>
+                    <input type="text" name="lenguajeC" />
+                    <input type="submit" value="Crear" />
+                </form>
+            </div>
+            <div class="subcontainer">
+                <form action="/delete" method="post">
+                    <label for="idD">ID a borrar</label>
+                    <input type="text" name="idD" />
+                    <input type="submit" value="Eliminar" />
+                </form>
+            </div>
+            <div class="subcontainer">
+                <form action="/update" method="post">
+                    <label for="idU">ID a actualizar</label>
+                    <input type="text" name="idU" />
+                    <label for="nameU">Nuevo nombre</label>
+                    <input type="text" name="nameU" />
+                    <label for="numLinesU">Nuevo numero de lineas</label>
+                    <input type="text" name="numLinesU" />
+                    <label for="lenguajeU">Nuevo Lenguaje</label>
+                    <input type="text" name="lenguajeU" />
+                    <input type="submit" value="Actualizar" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -6,10 +6,10 @@ const app = express();
 const port = PORT;
 
 app.get("/", (req, res) => {
-    res.send("Llamen a Dios!");
+    res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get("/ping", async (req, res) => {
+app.get("/read", async (req, res) => {
     const [result] = await conn.query(`SELECT * FROM codigo;`);
     console.log(result);
     res.json(result);
